@@ -9,6 +9,8 @@ packages = [{include = "image_tracer"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 requests = "^2.31.0"
+fastapi = "^0.101.0"
+uvicorn = "^0.23.2"
 
 [tool.poetry.group.dev.dependencies]
 jupyter = "^1.0.0"
