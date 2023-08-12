@@ -3,11 +3,13 @@
 
 技术细节：
 1. 批量导入图片
-1. js获取图片时间戳+location
-1. js给后端发送请求
-1. 后端google map api? / osm python api backend 生成轨迹返回前端
-1. 前端绘制轨迹
-1. 一图流保存/分享
+2. js获取图片时间戳+location
+3. js给后端发送请求
+4. 后端google map api? / osm python api backend 生成轨迹返回前端
+5. 前端绘制轨迹
+6. 用户点取中间点进行校正， 重新生成推测轨迹
+7. 个性化设置
+8. 一图流保存/分享
 
 
 挑战/竞品：
