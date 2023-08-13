@@ -6,4 +6,5 @@ function addPointToMap(lat, lon) {
 function connectPoints(points) {
     // Use Mapbox Directions API to connect the points
     // Draw the trails on the map
+    
 }
