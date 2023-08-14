@@ -17,36 +17,17 @@ function get_exif_from_image(image) {
 }
 
 
+function get_exif_from_images(images) {
+    for (var i = 0; i < images.length; i++) {
+        var image = images[i];
+        get_exif_from_image(image);
+    }
+}
+
 
 document.getElementById('imageInput').addEventListener('change', function() {
     var files = this.files;
     console.debug("Getting location from", files.length, "files");
-    for (var i = 0; i < files.length; i++) {
-        var file = files[i];
-        console.debug("Getting location from", file.name);
-        get_exif_from_image(file);
-
-    }
+    get_exif_from_images(files);
 });
 
-
-handleDragOver = function(evt) {
-  evt.preventDefault();
-  const droppableCard = document.querySelector('.droppable-card');
-  droppableCard.classList.add('dragover');
-}
-
-handleDrop = function(evt) {
-  evt.preventDefault();
-  const droppableCard = document.querySelector('.droppable-card');
-  droppableCard.classList.remove('dragover');
-
-    var files = evt.dataTransfer.files; // FileList object.
-    console.debug("Getting location from", files.length, "files");
-    for (var i = 0; i < files.length; i++) {
-        var file = files[i];
-        console.debug("Getting location from", file.name);
-        get_exif_from_image(file);
-
-    }
-}
