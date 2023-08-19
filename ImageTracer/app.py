@@ -19,7 +19,10 @@ def get_directions(coordinate_list: Optional[list] = None):
 
     try:
         response = requests.get(url)
-        return response.json()
+        reponse_json = response.json()
+        data = reponse_json.routes[0]
+        route = data.geometry.coordinates
+        return route
     except Exception as e:
         print(e)
         return {"error": "An error occurred"}
