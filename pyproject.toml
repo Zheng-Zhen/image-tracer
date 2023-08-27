@@ -11,9 +11,13 @@ python = "^3.10"
 requests = "^2.31.0"
 fastapi = "^0.101.0"
 uvicorn = "^0.23.2"
+python-dotenv = "^1.0.0"
+httpx = "^0.24.1"
+python-multipart = "^0.0.6"
 
 [tool.poetry.group.dev.dependencies]
 jupyter = "^1.0.0"
+yapf = "^0.40.1"
 
 [build-system]
 requires = ["poetry-core"]
